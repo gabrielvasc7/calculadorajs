@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+   
+</head>
+<body>
+    <div class="container">
+    <fieldset class="fiel">
+        <legend class="titulo">JAVASCRIPT</legend>
+        <div class="menu">
+    <h1 class="titulo"> CALCULADORA </h1>
+    <h2 class="titulo">SOMA</h2>
+    <label class="label">Número 1</label><br>
+    <input type="number" id="numero1" class="put">
+    <br>
+    <label class="label">Número2</label><br>
+    <input type="number" id="numero2" class="put"><br><br><br><br>
+    <button onclick="soma();" class="btn"> CALCULE </button><br>
+    </div>
+    </fieldset>
+
+    
+
+    <fieldset class="fiel">
+        <legend class="titulo">JAVASCRIPT</legend>
+        <div class="menu">
+    <h1 class="titulo"> CALCULADORA </h1>
+    <h2 class="titulo">SUBTRAÇÃO</h2>
+    <label class="label">Número 1</label><br>
+    <input type="text" id="numero3" class="put">
+    <br>
+    <label class="label">Número2</label><br>
+    <input type="text" id="numero4" class="put"><br><br><br><br>
+    <button onclick="subtracao();" class="btn"> CALCULE </button><br>
+    </div>
+    </fieldset>
+
+    
+
+    <fieldset class="fiel">
+        <legend class="titulo">JAVASCRIPT</legend>
+        <div class="menu">
+    <h1 class="titulo"> CALCULADORA </h1>
+    <h2 class="titulo">MULTIPLICAÇÃO</h2>
+    <label class="label">Número 1</label><br>
+    <input type="number" id="numero5" class="put">
+    <br>
+    <label class="label">Número2</label><br>
+    <input type="number" id="numero6" class="put"><br><br><br><br>
+    <button onclick="multi();" class="btn"> CALCULE </button><br>
+    </div>
+    </fieldset>
+
+    <fieldset class="fiel">
+        <legend class="titulo">JAVASCRIPT</legend>
+        <div class="menu">
+    <h1 class="titulo"> CALCULADORA </h1>
+    <h2 class="titulo">DIVISÃO</h2>
+    <label class="label">Número 1</label><br>
+    <input type="number" id="numero7" class="put">
+    <br>
+    <label class="label">Número2</label><br>
+    <input type="number" id="numero8" class="put"><br><br><br><br>
+    <button onclick="divisao();" class="btn"> CALCULE </button><br>
+    </div>
+    </fieldset>
+</div>
+
+
+
+
+    
+
+<script>
+    function soma() {
+        var nu1 = document.getElementById("numero1").value;
+        var nu2 = document.getElementById("numero2").value;
+        var nu3 = parseInt(nu1) + parseInt(nu2);
+        alert( " O resultado é: " + nu3 );
+    }
+
+
+
+    function subtracao() {
+            var nu1 = document.getElementById("numero3").value;
+            var nu2 = document.getElementById("numero4").value;
+            var nu3 = nu1 - nu2;
+            alert(" O resultado é: " + nu3 );
+        }
+
+
+        function multi() {
+            var nu1 = document.getElementById("numero5").value;
+            var nu2 = document.getElementById("numero6").value;
+            var nu3 = nu1 * nu2;
+            alert( " O resultado é: " + nu3 );
+        }
+
+
+        function divisao() {
+            var nu1 = document.getElementById("numero7").value;
+            var nu2 = document.getElementById("numero8").value;
+            var nu3 = nu1 / nu2;
+            alert(" O resultado é: " + nu3 );
+        }
+
+</script>
+
+    
+    
+   
+</body>
+</html>
